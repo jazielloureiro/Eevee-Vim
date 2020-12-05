@@ -2,7 +2,7 @@ set background=dark
 
 hi clear
 if exists("syntax_on")
-  syntax reset
+	syntax reset
 endif
 
 let g:colors_name = "MCCS"
@@ -72,6 +72,18 @@ exe "hi Normal".       s:fmtNone. s:fg.s:white.     s:bg.s:black
 exe "hi Search".       s:fmtNone. s:fg.s:white.     s:bg.s:green
 exe "hi StatusLine".   s:fmtNone. s:fg.s:black.     s:bg.s:pink
 exe "hi StatusLineNC". s:fmtNone. s:fg.s:black.     s:bg.s:white
-exe "hi Title".        s:fmtNone. s:fg.s:white.     s:bgNone
+exe "hi Title".        s:fmtNone. s:fg.s:blue.      s:bgNone
 exe "hi WarningMsg".   s:fmtNone. s:fg.s:black.     s:bg.s:yellow
 exe "hi VertSplit".    s:fmtNone. s:fg.s:white.     s:bgNone
+
+hi link HtmlArg Identifier
+hi link HtmlTag HtmlStatement
+hi link HtmlEndTag HtmlStatement
+
+hi link CssColor Number
+hi link CssBraces none
+hi link CssProp Statement
+hi link CssAttr none
+
+hi link JavaScriptValue Number
+hi link JavaScriptBraces none
