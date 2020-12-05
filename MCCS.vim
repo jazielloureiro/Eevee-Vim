@@ -7,32 +7,71 @@ endif
 
 let g:colors_name = "MCCS"
 
-hi Comment	cterm=NONE	ctermfg=245	ctermbg=NONE	gui=NONE	guifg=#888a85	guibg=NONE
-hi Constant	cterm=NONE	ctermfg=4	ctermbg=NONE	gui=NONE	guifg=#416dab	guibg=NONE
-hi String	cterm=NONE	ctermfg=226	ctermbg=NONE	gui=NONE	guifg=#ffe612	guibg=NONE
-hi Character	cterm=NONE	ctermfg=226	ctermbg=NONE	gui=NONE	guifg=#ffe612	guibg=NONE
-hi Number	cterm=NONE	ctermfg=203	ctermbg=NONE	gui=NONE	guifg=#ff5555	guibg=NONE
-hi Boolean	cterm=NONE	ctermfg=205	ctermbg=NONE	gui=NONE	guifg=#ff3b86	guibg=NONE
-hi Float	cterm=NONE	ctermfg=203	ctermbg=NONE	gui=NONE	guifg=#ff5555	guibg=NONE
-hi Identifier	cterm=NONE	ctermfg=171	ctermbg=NONE	gui=NONE	guifg=#be5eff	guibg=NONE
-hi Statement	cterm=NONE	ctermfg=37	ctermbg=NONE	gui=NONE	guifg=#00aaaa	guibg=NONE
-hi Preproc	cterm=NONE	ctermfg=4	ctermbg=NONE	gui=NONE	guifg=#416dab	guibg=NONE
-hi Type		cterm=NONE	ctermfg=34	ctermbg=NONE	gui=NONE	guifg=#00aa00	guibg=NONE
-hi Special	cterm=NONE	ctermfg=171	ctermbg=NONE	gui=NONE	guifg=#be5eff	guibg=NONE
-hi Ignore	cterm=NONE	ctermfg=252	ctermbg=NONE	gui=NONE	guifg=#d0d0d0	guibg=NONE
-hi Error	cterm=NONE	ctermfg=252	ctermbg=NONE	gui=NONE	guifg=#d0d0d0	guibg=#ff5555
-hi Todo		cterm=bold	ctermfg=226	ctermbg=NONE	gui=NONE	guifg=#ffe612	guibg=NONE
+if has("gui_running")
+	let s:fmt = " gui="
+	let s:fg = " guifg="
+	let s:bg = " guibg="
+	let s:white = "#d0d0d0"
+	let s:light_gray = "#888a85"
+	let s:dark_gray = "#555753"
+	let s:black = "#0f0f0f"
+	let s:green = "#00aa00"
+	let s:light_red = "#ff5555"
+	let s:dark_red = "#ff2e2e"
+	let s:purple = "#be5eff"
+	let s:pink = "#ff3b86"
+	let s:yellow = "#ffe612"
+	let s:cyan = "#00aaaa"
+	let s:blue = "#416dab"
+else
+	let s:fmt = " cterm="
+	let s:fg = " ctermfg="
+	let s:bg = " ctermbg="
+	let s:white = "252"
+	let s:light_gray = "245"
+	let s:dark_gray = "59"
+	let s:black = "233"
+	let s:green = "34"
+	let s:light_red = "203"
+	let s:dark_red = "196"
+	let s:purple = "171"
+	let s:pink = "205"
+	let s:yellow = "226"
+	let s:cyan = "37"
+	let s:blue = "4"
+endif
 
-hi Cursor	cterm=NONE	ctermfg=252	ctermbg=NONE	gui=NONE	guifg=#0f0f0f	guibg=#d0d0d0
-hi ErrorMsg	cterm=NONE	ctermfg=233	ctermbg=196	gui=NONE	guifg=#0f0f0f	guibg=#ff2e2e
-hi LineNr	cterm=NONE	ctermfg=59	ctermbg=NONE	gui=NONE	guifg=#555753 	guibg=NONE
-hi MatchParen	cterm=NONE	ctermfg=196	ctermbg=NONE	gui=NONE	guifg=#ff2e2e	guibg=NONE
-hi ModeMsg	cterm=NONE	ctermfg=252	ctermbg=NONE	gui=NONE	guifg=#d0d0d0	guibg=NONE
-hi MoreMsg	cterm=NONE	ctermfg=34	ctermbg=NONE	gui=NONE	guifg=#00aa00	guibg=NONE
-hi NonText	cterm=NONE	ctermfg=59	ctermbg=NONE	gui=NONE	guifg=#555753	guibg=NONE
-hi Normal	cterm=NONE	ctermfg=252	ctermbg=233	gui=NONE	guifg=#d0d0d0	guibg=#0f0f0f
-hi Search	cterm=NONE	ctermfg=252	ctermbg=34	gui=NONE
-hi StatusLine	gui=NONE	guifg=#0f0f0f 	guibg=#ff3b86
-hi StatusLineNC	gui=NONE	guifg=#0f0f0f	guibg=#d0d0d0
-hi WarningMsg	cterm=NONE	ctermfg=233	ctermbg=226	gui=NONE	guifg=#0f0f0f	guibg=#ffe612
-hi VertSplit	cterm=NONE	ctermfg=252	ctermbg=NONE	gui=NONE	guifg=#d0d0d0	guibg=NONE
+let s:fmtNone = s:fmt. "NONE"
+let s:fgNone = s:fg. "NONE"
+let s:bgNone = s:bg. "NONE"
+
+exe "hi Comment".    s:fmtNone.    s:fg.s:light_gray. s:bgNone
+exe "hi Constant".   s:fmtNone.    s:fg.s:blue.       s:bgNone
+exe "hi String".     s:fmtNone.    s:fg.s:yellow.     s:bgNone
+exe "hi Character".  s:fmtNone.    s:fg.s:yellow.     s:bgNone
+exe "hi Number".     s:fmtNone.    s:fg.s:light_red.  s:bgNone
+exe "hi Boolean".    s:fmtNone.    s:fg.s:pink.       s:bgNone
+exe "hi Float".      s:fmtNone.    s:fg.s:light_red.  s:bgNone
+exe "hi Identifier". s:fmtNone.    s:fg.s:purple.     s:bgNone
+exe "hi Statement".  s:fmtNone.    s:fg.s:cyan.       s:bgNone
+exe "hi Preproc".    s:fmtNone.    s:fg.s:blue.       s:bgNone
+exe "hi Type".       s:fmtNone.    s:fg.s:green.      s:bgNone
+exe "hi Special".    s:fmtNone.    s:fg.s:purple.     s:bgNone
+exe "hi Ignore".     s:fmtNone.    s:fg.s:white.      s:bgNone
+exe "hi Error".      s:fmtNone.    s:fg.s:white.      s:bg.s:light_red
+exe "hi Todo".       s:fmt."bold". s:fg.s:yellow.     s:bgNone
+
+exe "hi Cursor".       s:fmtNone. s:fg.s:black.     s:bg.s:white
+exe "hi ErrorMsg".     s:fmtNone. s:fg.s:black.     s:bg.s:dark_red
+exe "hi LineNr".       s:fmtNone. s:fg.s:dark_gray. s:bgNone
+exe "hi MatchParen".   s:fmtNone. s:fg.s:dark_red.  s:bgNone
+exe "hi ModeMsg".      s:fmtNone. s:fg.s:white.     s:bgNone
+exe "hi MoreMsg".      s:fmtNone. s:fg.s:green.     s:bgNone
+exe "hi NonText".      s:fmtNone. s:fg.s:dark_gray. s:bgNone
+exe "hi Normal".       s:fmtNone. s:fg.s:white.     s:bg.s:black
+exe "hi Search".       s:fmtNone. s:fg.s:white.     s:bg.s:green
+exe "hi StatusLine".   s:fmtNone. s:fg.s:black.     s:bg.s:pink
+exe "hi StatusLineNC". s:fmtNone. s:fg.s:black.     s:bg.s:white
+exe "hi Title".        s:fmtNone. s:fg.s:white.     s:bgNone
+exe "hi WarningMsg".   s:fmtNone. s:fg.s:black.     s:bg.s:yellow
+exe "hi VertSplit".    s:fmtNone. s:fg.s:white.     s:bgNone
