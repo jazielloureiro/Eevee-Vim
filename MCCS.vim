@@ -87,3 +87,10 @@ hi link CssAttr none
 
 hi link JavaScriptValue Number
 hi link JavaScriptBraces none
+
+hi link MarkdownHeadingDelimiter Title
+hi link MarkdownCode Statement
+hi link MarkdownCodeDelimiter Statement
+hi link MarkdownListMarker Type
+hi link MarkdownUrlTitleDelimiter String
+hi link MarkdownLinkText Identifier
