@@ -94,3 +94,5 @@ hi link MarkdownCodeDelimiter Statement
 hi link MarkdownListMarker Type
 hi link MarkdownUrlTitleDelimiter String
 hi link MarkdownLinkText Identifier
+
+hi link ShQuote String
