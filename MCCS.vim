@@ -96,3 +96,6 @@ hi link MarkdownUrlTitleDelimiter String
 hi link MarkdownLinkText Identifier
 
 hi link ShQuote String
+hi link ShDeref Identifier
+
+hi link RubyStringDelimiter String
