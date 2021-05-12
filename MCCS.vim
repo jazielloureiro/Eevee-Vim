@@ -76,6 +76,11 @@ exe "hi Title".        s:fmtNone. s:fg.s:blue.      s:bgNone
 exe "hi WarningMsg".   s:fmtNone. s:fg.s:black.     s:bg.s:yellow
 exe "hi VertSplit".    s:fmtNone. s:fg.s:white.     s:bgNone
 
+exe "hi PMenu".        s:fmtNone. s:fg.s:white.     s:bg.s:dark_gray
+exe "hi PMenuSel".     s:fmtNone. s:fg.s:dark_gray. s:bg.s:white
+exe "hi PMenuSBar".    s:fmtNone. s:fgNone.         s:bg.s:white
+exe "hi PMenuThumb".   s:fmtNone. s:fgNone.         s:bg.s:dark_red
+
 hi link HtmlArg Identifier
 hi link HtmlTag HtmlStatement
 hi link HtmlEndTag HtmlStatement
