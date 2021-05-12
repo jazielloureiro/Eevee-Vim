@@ -45,18 +45,19 @@ let s:fmtNone = s:fmt. "NONE"
 let s:fgNone = s:fg. "NONE"
 let s:bgNone = s:bg. "NONE"
 
-exe "hi Comment".    s:fmtNone.    s:fg.s:light_gray. s:bgNone
 exe "hi Constant".   s:fmtNone.    s:fg.s:blue.       s:bgNone
 exe "hi String".     s:fmtNone.    s:fg.s:yellow.     s:bgNone
-exe "hi Character".  s:fmtNone.    s:fg.s:yellow.     s:bgNone
 exe "hi Number".     s:fmtNone.    s:fg.s:light_red.  s:bgNone
 exe "hi Boolean".    s:fmtNone.    s:fg.s:pink.       s:bgNone
-exe "hi Float".      s:fmtNone.    s:fg.s:light_red.  s:bgNone
+hi link Character String
+hi link Float Number
+
+exe "hi Comment".    s:fmtNone.    s:fg.s:light_gray. s:bgNone
+exe "hi Special".    s:fmtNone.    s:fg.s:purple.     s:bgNone
 exe "hi Identifier". s:fmtNone.    s:fg.s:purple.     s:bgNone
 exe "hi Statement".  s:fmtNone.    s:fg.s:cyan.       s:bgNone
-exe "hi Preproc".    s:fmtNone.    s:fg.s:blue.       s:bgNone
+exe "hi PreProc".    s:fmtNone.    s:fg.s:blue.       s:bgNone
 exe "hi Type".       s:fmtNone.    s:fg.s:green.      s:bgNone
-exe "hi Special".    s:fmtNone.    s:fg.s:purple.     s:bgNone
 exe "hi Ignore".     s:fmtNone.    s:fg.s:white.      s:bgNone
 exe "hi Error".      s:fmtNone.    s:fg.s:white.      s:bg.s:light_red
 exe "hi Todo".       s:fmt."bold". s:fg.s:yellow.     s:bgNone
