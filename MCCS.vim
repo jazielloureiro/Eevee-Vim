@@ -87,12 +87,12 @@ hi link HtmlTag HtmlStatement
 hi link HtmlEndTag HtmlStatement
 
 hi link CssColor Number
-hi link CssBraces none
+hi link CssBraces NONE
 hi link CssProp Statement
-hi link CssAttr none
+hi link CssAttr NONE
 
 hi link JavaScriptValue Number
-hi link JavaScriptBraces none
+hi link JavaScriptBraces NONE
 
 hi link MarkdownHeadingDelimiter Title
 hi link MarkdownCode Statement
