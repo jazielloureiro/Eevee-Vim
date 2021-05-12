@@ -41,46 +41,46 @@ else
 	let s:blue = "4"
 endif
 
-let s:fmtNone = s:fmt. "NONE"
-let s:fgNone = s:fg. "NONE"
-let s:bgNone = s:bg. "NONE"
+let s:fmtNone = s:fmt . "NONE"
+let s:fgNone = s:fg . "NONE"
+let s:bgNone = s:bg . "NONE"
 
-exe "hi Constant".   s:fmtNone.    s:fg.s:blue.       s:bgNone
-exe "hi String".     s:fmtNone.    s:fg.s:yellow.     s:bgNone
-exe "hi Number".     s:fmtNone.    s:fg.s:light_red.  s:bgNone
-exe "hi Boolean".    s:fmtNone.    s:fg.s:pink.       s:bgNone
+exe "hi Constant" . s:fmtNone . s:fg . s:blue . s:bgNone
+exe "hi String" . s:fmtNone . s:fg . s:yellow . s:bgNone
+exe "hi Number" . s:fmtNone . s:fg . s:light_red . s:bgNone
+exe "hi Boolean" . s:fmtNone . s:fg . s:pink . s:bgNone
 hi link Character String
 hi link Float Number
 
-exe "hi Comment".    s:fmtNone.    s:fg.s:light_gray. s:bgNone
-exe "hi Special".    s:fmtNone.    s:fg.s:purple.     s:bgNone
-exe "hi Identifier". s:fmtNone.    s:fg.s:purple.     s:bgNone
-exe "hi Statement".  s:fmtNone.    s:fg.s:cyan.       s:bgNone
-exe "hi PreProc".    s:fmtNone.    s:fg.s:blue.       s:bgNone
-exe "hi Type".       s:fmtNone.    s:fg.s:green.      s:bgNone
-exe "hi Ignore".     s:fmtNone.    s:fg.s:white.      s:bgNone
-exe "hi Error".      s:fmtNone.    s:fg.s:white.      s:bg.s:light_red
-exe "hi Todo".       s:fmt."bold". s:fg.s:yellow.     s:bgNone
+exe "hi Comment" . s:fmtNone . s:fg . s:light_gray . s:bgNone
+exe "hi Special" . s:fmtNone . s:fg . s:purple . s:bgNone
+exe "hi Identifier" . s:fmtNone . s:fg . s:purple . s:bgNone
+exe "hi Statement" . s:fmtNone . s:fg . s:cyan . s:bgNone
+exe "hi PreProc" . s:fmtNone . s:fg . s:blue . s:bgNone
+exe "hi Type" . s:fmtNone . s:fg . s:green . s:bgNone
+exe "hi Ignore" . s:fmtNone . s:fg . s:white . s:bgNone
+exe "hi Error" . s:fmtNone . s:fg . s:white . s:bg . s:light_red
+exe "hi Todo" . s:fmt . "bold" . s:fg . s:yellow . s:bgNone
 
-exe "hi Cursor".       s:fmtNone. s:fg.s:black.     s:bg.s:white
-exe "hi ErrorMsg".     s:fmtNone. s:fg.s:black.     s:bg.s:dark_red
-exe "hi LineNr".       s:fmtNone. s:fg.s:dark_gray. s:bgNone
-exe "hi MatchParen".   s:fmtNone. s:fg.s:dark_red.  s:bgNone
-exe "hi ModeMsg".      s:fmtNone. s:fg.s:white.     s:bgNone
-exe "hi MoreMsg".      s:fmtNone. s:fg.s:green.     s:bgNone
-exe "hi NonText".      s:fmtNone. s:fg.s:dark_gray. s:bgNone
-exe "hi Normal".       s:fmtNone. s:fg.s:white.     s:bg.s:black
-exe "hi Search".       s:fmtNone. s:fg.s:white.     s:bg.s:green
-exe "hi StatusLine".   s:fmtNone. s:fg.s:black.     s:bg.s:pink
-exe "hi StatusLineNC". s:fmtNone. s:fg.s:black.     s:bg.s:white
-exe "hi Title".        s:fmtNone. s:fg.s:blue.      s:bgNone
-exe "hi WarningMsg".   s:fmtNone. s:fg.s:black.     s:bg.s:yellow
-exe "hi VertSplit".    s:fmtNone. s:fg.s:white.     s:bgNone
+exe "hi Cursor" . s:fmtNone . s:fg . s:black . s:bg . s:white
+exe "hi ErrorMsg" . s:fmtNone . s:fg . s:black . s:bg . s:dark_red
+exe "hi LineNr" . s:fmtNone . s:fg . s:dark_gray . s:bgNone
+exe "hi MatchParen" . s:fmtNone . s:fg . s:dark_red . s:bgNone
+exe "hi ModeMsg" . s:fmtNone . s:fg . s:white . s:bgNone
+exe "hi MoreMsg" . s:fmtNone . s:fg . s:green . s:bgNone
+exe "hi NonText" . s:fmtNone . s:fg . s:dark_gray . s:bgNone
+exe "hi Normal" . s:fmtNone . s:fg . s:white . s:bg . s:black
+exe "hi Search" . s:fmtNone . s:fg . s:white . s:bg . s:green
+exe "hi StatusLine" . s:fmtNone . s:fg . s:black . s:bg . s:pink
+exe "hi StatusLineNC" . s:fmtNone . s:fg . s:black . s:bg . s:white
+exe "hi Title" . s:fmtNone . s:fg . s:blue . s:bgNone
+exe "hi WarningMsg" . s:fmtNone . s:fg . s:black . s:bg . s:yellow
+exe "hi VertSplit" . s:fmtNone . s:fg . s:white . s:bgNone
 
-exe "hi PMenu".        s:fmtNone. s:fg.s:white.     s:bg.s:dark_gray
-exe "hi PMenuSel".     s:fmtNone. s:fg.s:dark_gray. s:bg.s:white
-exe "hi PMenuSBar".    s:fmtNone. s:fgNone.         s:bg.s:white
-exe "hi PMenuThumb".   s:fmtNone. s:fgNone.         s:bg.s:dark_red
+exe "hi PMenu" . s:fmtNone . s:fg . s:white . s:bg . s:dark_gray
+exe "hi PMenuSel" . s:fmtNone . s:fg . s:dark_gray . s:bg . s:white
+exe "hi PMenuSBar" . s:fmtNone . s:fgNone . s:bg . s:white
+exe "hi PMenuThumb" . s:fmtNone . s:fgNone . s:bg . s:dark_red
 
 hi link HtmlArg Identifier
 hi link HtmlTag HtmlStatement
