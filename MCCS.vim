@@ -105,3 +105,7 @@ hi link ShQuote String
 hi link ShDeref Identifier
 
 hi link RubyStringDelimiter String
+
+hi link VimParenSep NONE
+hi link VimUserFunc Identifier
+hi link VimFunction Identifier
