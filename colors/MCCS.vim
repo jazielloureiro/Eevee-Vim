@@ -61,6 +61,7 @@ call s:highlight('MoreMsg', 'NONE', s:lcyan, s:none)
 call s:highlight('NonText', 'NONE', s:dgray, s:none)
 call s:highlight('Normal', 'NONE', s:white, s:black)
 call s:highlight('Search', 'NONE', s:white, s:dgreen)
+call s:highlight('SignColumn', 'NONE', s:lgray, s:black)
 call s:highlight('StatusLine', 'NONE', s:white, s:dgray)
 call s:highlight('StatusLineNC', 'NONE', s:white, s:lgray)
 call s:highlight('Title', 'NONE', s:dblue, s:none)
@@ -71,6 +72,11 @@ call s:highlight('PMenu', 'NONE', s:white, s:dgray)
 call s:highlight('PMenuSel', 'NONE', s:dgray, s:white)
 call s:highlight('PMenuSBar', 'NONE', s:none, s:lgray)
 call s:highlight('PMenuThumb', 'NONE', s:none, s:lyellow)
+
+exe 'hi SpellBad ctermul=' . s:lred[0] . ' guisp=' . s:lred[1]
+exe 'hi SpellCap ctermul=' . s:lyellow[0] . ' guisp=' . s:lyellow[1]
+exe 'hi SpellRare ctermul=' . s:lblue[0] . ' guisp=' . s:lblue[1]
+exe 'hi SpellLocal ctermul=' . s:lgreen[0] . ' guisp=' . s:lgreen[1]
 
 hi link HtmlArg Identifier
 hi link HtmlTag HtmlStatement
