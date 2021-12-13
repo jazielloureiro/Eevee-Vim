@@ -41,6 +41,15 @@ else
 	let s:blue = '4'
 endif
 
+function! s:highlight(target, fmt, fg, bg)
+	let l:high_line = 'hi ' . a:target
+	let l:high_line .= ' cterm=' . a:fmt . ' gui=' . a:fmt
+	let l:high_line .= ' ctermfg=' . a:fg[0] . ' guifg=' . a:fg[1]
+	let l:high_line .= ' ctermbg=' . a:bg[0] . ' guibg=' . a:bg[1]
+
+	exe l:high_line
+endfunction
+
 let s:fmt_none = s:fmt . 'NONE'
 let s:fg_none = s:fg . 'NONE'
 let s:bg_none = s:bg . 'NONE'
