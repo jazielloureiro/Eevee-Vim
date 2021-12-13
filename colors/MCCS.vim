@@ -35,7 +35,7 @@ function! s:highlight(target, fmt, fg, bg)
 	exe l:highline
 endfunction
 
-call s:highlight('Constant', 'NONE', s:dblue, s:none)
+call s:highlight('Constant', 'NONE', s:lblue, s:none)
 call s:highlight('String', 'NONE', s:dyellow, s:none)
 call s:highlight('Number', 'NONE', s:dred, s:none)
 call s:highlight('Boolean', 'NONE', s:lmagenta, s:none)
@@ -43,34 +43,34 @@ hi link Character String
 hi link Float Number
 
 call s:highlight('Comment', 'NONE', s:lgray, s:none)
-call s:highlight('Special', 'NONE', s:dmagenta, s:none)
+call s:highlight('Special', 'NONE', s:lmagenta, s:none)
 call s:highlight('Identifier', 'NONE', s:dmagenta, s:none)
 call s:highlight('Statement', 'NONE', s:dcyan, s:none)
 call s:highlight('PreProc', 'NONE', s:dblue, s:none)
 call s:highlight('Type', 'NONE', s:dgreen, s:none)
 call s:highlight('Ignore', 'NONE', s:white, s:none)
-call s:highlight('Error', 'NONE', s:white, s:lred)
+call s:highlight('Error', 'bold', s:dred, s:none)
 call s:highlight('Todo', 'bold', s:dyellow, s:none)
 
 call s:highlight('Cursor', 'NONE', s:black, s:white)
 call s:highlight('ErrorMsg', 'NONE', s:black, s:dred)
 call s:highlight('LineNr', 'NONE', s:dgray, s:none)
-call s:highlight('MatchParen', 'NONE', s:dred, s:none)
+call s:highlight('MatchParen', 'NONE', s:lred, s:none)
 call s:highlight('ModeMsg', 'NONE', s:white, s:none)
-call s:highlight('MoreMsg', 'NONE', s:dgreen, s:none)
+call s:highlight('MoreMsg', 'NONE', s:lcyan, s:none)
 call s:highlight('NonText', 'NONE', s:dgray, s:none)
 call s:highlight('Normal', 'NONE', s:white, s:black)
 call s:highlight('Search', 'NONE', s:white, s:dgreen)
-call s:highlight('StatusLine', 'NONE', s:black, s:dmagenta)
-call s:highlight('StatusLineNC', 'NONE', s:black, s:white)
+call s:highlight('StatusLine', 'NONE', s:white, s:dgray)
+call s:highlight('StatusLineNC', 'NONE', s:white, s:lgray)
 call s:highlight('Title', 'NONE', s:dblue, s:none)
 call s:highlight('WarningMsg', 'NONE', s:black, s:dyellow)
 call s:highlight('VertSplit', 'NONE', s:white, s:none)
 
-call s:highlight('PMenu', 'NONE', s:white, s:lgray)
-call s:highlight('PMenuSel', 'NONE', s:lgray, s:white)
-call s:highlight('PMenuSBar', 'NONE', s:none, s:white)
-call s:highlight('PMenuThumb', 'NONE', s:none, s:dred)
+call s:highlight('PMenu', 'NONE', s:white, s:dgray)
+call s:highlight('PMenuSel', 'NONE', s:dgray, s:white)
+call s:highlight('PMenuSBar', 'NONE', s:none, s:lgray)
+call s:highlight('PMenuThumb', 'NONE', s:none, s:lyellow)
 
 hi link HtmlArg Identifier
 hi link HtmlTag HtmlStatement
