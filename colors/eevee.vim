@@ -5,7 +5,7 @@ if exists('syntax_on')
 	syntax reset
 endif
 
-let g:colors_name = 'MCCS'
+let g:colors_name = 'eevee'
 
 let s:black = [0, '#1f1f1f']
 let s:dred = [1, '#d05a5a']

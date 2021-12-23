@@ -1,34 +1,19 @@
-# MCCS
+# Eevee
 
-My custom Vim color scheme
+A dark Vim color scheme
 
-## Screenshots
+## Screenshot
 
-### C / Terminal
-
-![Screenshot](https://i.ibb.co/vYM4tFZ/vim-c.png)
-
-### HTML / GUI
-
-![Screenshot](https://i.ibb.co/10cZG4g/gvim-html.png)
+![Screenshot](https://i.ibb.co/Rg0G6wT/screenshot.png)
 
 ## Installation
 
-### Manually
-
-Add `colors/MCCS.vim` to your `.vim/colors` directory.
-
-```sh
-curl -o ~/.vim/colors/MCCS.vim --create-dirs \
-    https://raw.githubusercontent.com/jazielloureiro/MCCS-Vim/master/colors/MCCS.vim
-```
-
-### Plugin Manager [(vim-plug)](https://github.com/junegunn/vim-plug)
+### [(vim-plug)](https://github.com/junegunn/vim-plug)
 
 - Add to your `.vimrc`:
 
 ```vim
-Plug 'jazielloureiro/MCCS-Vim'
+Plug 'jazielloureiro/Eevee-Vim'
 ```
 
 - And then, run the commands:
@@ -40,4 +25,4 @@ Plug 'jazielloureiro/MCCS-Vim'
 
 ## License
 
-[MIT](https://github.com/jazielloureiro/MCCS-Vim/blob/master/LICENSE)
+[MIT](https://github.com/jazielloureiro/Eevee-Vim/blob/master/LICENSE)

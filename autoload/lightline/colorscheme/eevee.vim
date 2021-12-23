@@ -35,4 +35,4 @@ let s:p.tabline.tabsel = [[s:black, s:cyan]]
 let s:p.tabline.middle = [[s:white, s:black]]
 let s:p.tabline.right = [[s:red, s:black]]
 
-let g:lightline#colorscheme#MCCS#palette = lightline#colorscheme#flatten(s:p)
+let g:lightline#colorscheme#eevee#palette = lightline#colorscheme#flatten(s:p)
